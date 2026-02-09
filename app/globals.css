@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Minimal design system via CSS variables.
+  Tailwind can reference these via `bg-[rgb(var(--...))]` if needed.
+*/
+:root {
+  /* Slight violet tint for a more consistent brand background */
+  --bg: 245 243 255;        /* violet-50 */
+  --fg: 15 23 42;          /* slate-900 */
+  --card: 255 255 255;     /* white */
+  --border: 226 232 240;   /* slate-200 */
+
+  /* Blurred purple glow palette (used by loader backgrounds) */
+  --oqu-glow-1: 139 92 246;   /* violet-500 */
+  --oqu-glow-2: 167 139 250;  /* violet-400 */
+  --oqu-glow-3: 99 102 241;   /* indigo-500 */
+  --oqu-grad-1: 245 243 255;  /* violet-50 */
+  --oqu-grad-2: 237 233 254;  /* violet-100 */
+}
+
+html.dark {
+  --bg: 2 6 23;            /* slate-950 */
+  --fg: 226 232 240;       /* slate-200 */
+  --card: 15 23 42;        /* slate-900 */
+  --border: 51 65 85;      /* slate-700 */
+
+  /* Dark-mode glow palette */
+  --oqu-glow-1: 124 58 237;  /* violet-600 */
+  --oqu-glow-2: 109 40 217;  /* violet-700 */
+  --oqu-glow-3: 79 70 229;   /* indigo-600 */
+  --oqu-grad-1: 2 6 23;      /* slate-950 */
+  --oqu-grad-2: 15 23 42;    /* slate-900 */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: rgb(var(--fg));
+  background: rgb(var(--bg));
+}
+
+@layer components {
+  .oqu-card {
+    @apply rounded-2xl border shadow-sm;
+    border-color: rgb(var(--border));
+    background: rgb(var(--card));
+  }
+  .oqu-btn {
+    @apply inline-flex items-center justify-center rounded-xl px-4 py-2.5 font-semibold transition-all duration-200;
+    @apply hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.99];
+    @apply hover:shadow-md hover:shadow-indigo-500/10 dark:hover:shadow-indigo-500/15;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500/30;
+  }
+  .oqu-btn-primary {
+    @apply oqu-btn bg-violet-600 text-white hover:bg-violet-700;
+    @apply hover:shadow-lg hover:shadow-violet-500/25;
+  }
+  .oqu-btn-ghost {
+    @apply oqu-btn bg-transparent hover:bg-black/5 dark:hover:bg-white/10;
+  }
+}
+
+@layer components {
+  /* Skeleton shimmer */
+  .oqu-skeleton {
+    background: linear-gradient(
+      90deg,
+      rgba(148, 163, 184, 0.18) 0%,
+      rgba(148, 163, 184, 0.08) 45%,
+      rgba(148, 163, 184, 0.18) 90%
+    );
+    background-size: 420px 100%;
+    animation: oqu-shimmer 1.25s ease-in-out infinite;
+  }
+
+  /* Soft floating blobs for hero */
+  .oqu-float {
+    animation: oqu-float 9s ease-in-out infinite;
+  }
+  .oqu-float-slow {
+    animation: oqu-float 13s ease-in-out infinite reverse;
+  }
+}
+
+@keyframes oqu-shimmer {
+  0% {
+    background-position: -420px 0;
+  }
+  100% {
+    background-position: 420px 0;
+  }
+}
+
+@keyframes oqu-float {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -14px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

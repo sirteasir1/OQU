@@ -1,0 +1,266 @@
+/**
+ * Mock Data Service
+ * Simulates AI-generated content and quiz data
+ * NO REAL AI CALLS - All data is pre-defined with context-aware logic
+ */
+
+    { id: 'g8-simultaneous-eq', title: 'Simultaneous Equations', description: 'Solving systems of linear equations', grade: 8 },
+    { id: 'g8-polynomials', title: 'Polynomials', description: 'Operations with polynomials', grade: 8 },
+    { id: 'g8-exponents', title: 'Exponents & Powers', description: 'Laws of exponents and scientific notation', grade: 8 },
+    // Geometry
+    { id: 'g8-pythagoras', title: 'Pythagorean Theorem', description: 'Right triangle calculations', grade: 8 },
+    { id: 'g8-volume-surface', title: 'Volume & Surface Area', description: '3D shapes calculations', grade: 8 },
+    { id: 'g8-transformations', title: 'Transformations', description: 'Reflection, rotation, and translation', grade: 8 },
+    { id: 'g8-similarity', title: 'Similarity', description: 'Similar figures and scale factors', grade: 8 },
+    { id: 'g8-coordinate-geometry', title: 'Coordinate Geometry', description: 'Graphing on coordinate plane', grade: 8 },
+    // Statistics & Probability
+    { id: 'g8-statistics', title: 'Statistics Basics', description: 'Data collection and analysis', grade: 8 },
+    { id: 'g8-probability-intro', title: 'Introduction to Probability', description: 'Basic probability concepts', grade: 8 },
+  ],
+  9: [
+    // Algebra
+    { id: 'g9-quadratic', title: 'Quadratic Equations', description: 'Solving x² equations using various methods', grade: 9 },
+    { id: 'g9-quadratic-formula', title: 'Quadratic Formula', description: 'Using the quadratic formula', grade: 9 },
+    { id: 'g9-inequalities-systems', title: 'Systems of Inequalities', description: 'Solving and graphing inequality systems', grade: 9 },
+    { id: 'g9-functions-graphs', title: 'Functions & Graphs', description: 'Understanding functions and their graphs', grade: 9 },
+    { id: 'g9-radical-expressions', title: 'Radical Expressions', description: 'Simplifying square roots and radicals', grade: 9 },
+    // Geometry
+    { id: 'g9-trigonometry', title: 'Trigonometry Intro', description: 'Sine, cosine, tangent basics', grade: 9 },
+    { id: 'g9-circle-theorems', title: 'Circle Theorems', description: 'Properties of circles and angles', grade: 9 },
+    { id: 'g9-polygons', title: 'Polygons', description: 'Interior and exterior angles', grade: 9 },
+    { id: 'g9-area-volume', title: 'Advanced Area & Volume', description: 'Complex shapes and solids', grade: 9 },
+    // Probability & Statistics
+    { id: 'g9-probability', title: 'Probability', description: 'Compound probability and tree diagrams', grade: 9 },
+    { id: 'g9-statistics-advanced', title: 'Advanced Statistics', description: 'Standard deviation and variance', grade: 9 },
+    // Number Theory
+    { id: 'g9-sequences', title: 'Sequences & Patterns', description: 'Arithmetic and geometric sequences', grade: 9 },
+    { id: 'g9-number-theory', title: 'Number Theory', description: 'Prime numbers, factors, and divisibility', grade: 9 },
+  ],
+  10: [
+    // Algebra & Functions
+    { id: 'g10-functions', title: 'Functions', description: 'Understanding f(x) and function notation', grade: 10 },
+    { id: 'g10-quadratic-functions', title: 'Quadratic Functions', description: 'Parabolas and transformations', grade: 10 },
+    { id: 'g10-exponential', title: 'Exponential Functions', description: 'Growth and decay models', grade: 10 },
+    { id: 'g10-logarithms', title: 'Logarithms', description: 'Properties and applications', grade: 10 },
+    { id: 'g10-rational-functions', title: 'Rational Functions', description: 'Functions with fractions', grade: 10 },
+    // Trigonometry
+    { id: 'g10-trig-identities', title: 'Trigonometric Identities', description: 'Fundamental trig identities', grade: 10 },
+    { id: 'g10-trig-equations', title: 'Solving Trig Equations', description: 'Solving equations with sin, cos, tan', grade: 10 },
+    { id: 'g10-unit-circle', title: 'Unit Circle', description: 'Understanding the unit circle', grade: 10 },
+    // Sequences & Series
+    { id: 'g10-sequences', title: 'Sequences & Series', description: 'Arithmetic and geometric series', grade: 10 },
+    { id: 'g10-sigma-notation', title: 'Sigma Notation', description: 'Summation notation and formulas', grade: 10 },
+    // Analytic Geometry
+    { id: 'g10-coordinate-systems', title: 'Coordinate Systems', description: 'Cartesian and polar coordinates', grade: 10 },
+    { id: 'g10-conic-sections', title: 'Conic Sections', description: 'Circles, ellipses, parabolas, hyperbolas', grade: 10 },
+    { id: 'g10-matrices', title: 'Introduction to Matrices', description: 'Matrix operations and applications', grade: 10 },
+    // Statistics
+    { id: 'g10-statistics', title: 'Statistical Analysis', description: 'Hypothesis testing and distributions', grade: 10 },
+  ],
+  11: [
+    // Calculus
+    { id: 'g11-limits', title: 'Limits', description: 'Understanding limits and continuity', grade: 11 },
+    { id: 'g11-derivatives', title: 'Derivatives', description: 'Rules of differentiation', grade: 11 },
+    { id: 'g11-calculus', title: 'Applications of Calculus', description: 'Optimization and related rates', grade: 11 },
+    { id: 'g11-integration', title: 'Integration', description: 'Antiderivatives and definite integrals', grade: 11 },
+    // Advanced Algebra
+    { id: 'g11-vectors', title: 'Vectors', description: 'Vector operations and applications', grade: 11 },
+    { id: 'g11-complex', title: 'Complex Numbers', description: 'Imaginary numbers and complex plane', grade: 11 },
+    { id: 'g11-matrices-advanced', title: 'Advanced Matrices', description: 'Determinants and inverse matrices', grade: 11 },
+    { id: 'g11-binomial-theorem', title: 'Binomial Theorem', description: 'Expanding binomial expressions', grade: 11 },
+    // Trigonometry
+    { id: 'g11-trig-advanced', title: 'Advanced Trigonometry', description: 'Sum and difference formulas', grade: 11 },
+    { id: 'g11-inverse-trig', title: 'Inverse Trigonometric Functions', description: 'Arcsin, arccos, arctan', grade: 11 },
+    // Probability & Statistics
+    { id: 'g11-probability-advanced', title: 'Advanced Probability', description: 'Binomial and normal distributions', grade: 11 },
+    { id: 'g11-combinatorics', title: 'Combinatorics', description: 'Permutations and combinations', grade: 11 },
+    // Differential Equations
+    { id: 'g11-differential-eq', title: 'Differential Equations', description: 'Introduction to differential equations', grade: 11 },
+    { id: 'g11-parametric', title: 'Parametric Equations', description: 'Curves defined by parameters', grade: 11 },
+    { id: 'g11-polar-coordinates', title: 'Polar Coordinates', description: 'Working in polar coordinate system', grade: 11 },
+  ],
+};
+
+// Interest-based content generators
+const INTEREST_METAPHORS: Record<Interest, Record<string, { metaphor: string; theory: string; example: string }>> = {
+  Football: {
+    'g7-linear-eq': {
+      metaphor: "Think of solving equations like planning a perfect pass. The ball (x) needs to reach the goal, and you need to calculate the exact angle and power. If you know the distance (one side of the equation), you can find the right kick strength (x).",
+      theory: "A linear equation is like a game plan: both sides must be balanced. What you do to one side (add players, change tactics), you must do to the other to keep the match fair. The goal is to isolate x—get it alone on one side.",
+      example: "If a striker scores 3 goals every match, and after 5 matches he has 15 goals, we write: 3x = 15. Divide both sides by 3 (the 'goals per match' rate), and x = 5 matches. Simple team math!"
+    },
+    'g9-quadratic': {
+      metaphor: "A quadratic equation is like the arc of a soccer ball when you lob it over defenders. The ball goes up, reaches a peak (the vertex), then comes down. The equation x² describes that curved path.",
+      theory: "Quadratics have two solutions because the ball can land at two different spots depending on your kick angle. We use factoring or the quadratic formula to find where the ball 'lands' (x-intercepts).",
+      example: "If a ball's height is h = -5t² + 20t, when does it hit the ground? Set h = 0: -5t² + 20t = 0. Factor: t(-5t + 20) = 0. So t = 0 (start) or t = 4 seconds (landing)."
+    }
+  },
+  Minecraft: {
+    'g7-linear-eq': {
+      metaphor: "Imagine you're building a wall. Each block (x) has the same height. If stacking 5 blocks gives you a wall that's 15 meters tall, how tall is one block? You're solving: 5x = 15.",
+      theory: "Linear equations are like crafting recipes. If you know how many diamonds you need for one sword, you can calculate how many you need for multiple swords. Keep the recipe balanced by doing the same to both sides.",
+      example: "You mine 8 coal per cave trip. After x trips you have 40 coal. Equation: 8x = 40. Divide by 8: x = 5 trips. Now you know your mining efficiency!"
+    },
+    'g9-quadratic': {
+      metaphor: "When you throw an Ender Pearl, it follows a curved path—up then down. That curve is a parabola, described by a quadratic equation. The vertex is the highest point before it falls.",
+      theory: "Quadratics model projectile motion. In Minecraft, understanding the arc helps you calculate exactly where your pearl will land. The equation ax² + bx + c = 0 gives you the landing distance.",
+      example: "If your pearl's path is y = -x² + 4x, when does it hit the ground (y = 0)? Solve: -x² + 4x = 0 → x(-x + 4) = 0 → x = 0 or x = 4 blocks away."
+    }
+  },
+  'K-Pop': {
+    'g7-linear-eq': {
+      metaphor: "Think of choreography counts. If a dance move repeats every 4 beats and you've counted 20 beats, how many times did the move repeat? That's solving 4x = 20.",
+      theory: "Linear equations are like beat patterns in songs. Everything must stay in rhythm (balanced). If you change the tempo on one side, you adjust the other side to keep the music flowing.",
+      example: "A K-Pop group releases 3 songs per album. After x albums, they have 15 songs. Equation: 3x = 15. Divide by 3: x = 5 albums. Math in harmony!"
+    },
+    'g9-quadratic': {
+      metaphor: "Imagine the energy of a concert—it builds up (excited fans), hits a peak (the chorus drop), then calms down. That rise and fall is a parabola, just like quadratic equations graph out.",
+      theory: "Quadratic equations model things that peak and fall. In music production, volume curves or beat intensity can follow quadratic patterns. Finding the vertex tells you the peak moment.",
+      example: "If hype level is H = -t² + 6t, when is hype at maximum? The vertex formula, t = -b/2a, gives t = 3 minutes into the song. That's your peak energy!"
+    }
+  },
+  Space: {
+    'g7-linear-eq': {
+      metaphor: "Launching a rocket requires precise calculations. If your rocket travels at a constant speed of 1000 km/h, and you need to reach a station 5000 km away, you solve: 1000x = 5000 to find the hours needed.",
+      theory: "Linear equations are like orbital mechanics on a straight path. Balance is key—what goes on one side of the equation must mirror the other, like Newton's third law (action = reaction).",
+      example: "A satellite orbits Earth 15 times per day. How many orbits (x) in 3 days? Equation: x/3 = 15 → x = 45 orbits. Space math unlocked!"
+    },
+    'g9-quadratic': {
+      metaphor: "When you launch a rocket, its trajectory curves through space before reaching orbit. This parabolic arc is modeled by quadratic equations—up to escape velocity, then falling into orbital path.",
+      theory: "Quadratics describe the path of any object under gravity. For spacecraft, understanding the vertex (maximum height) and roots (launch and landing points) is critical for mission planning.",
+      example: "Rocket height: h = -5t² + 50t. When does it return to ground (h = 0)? Solve: t(-5t + 50) = 0 → t = 0 or t = 10 seconds. Perfect launch window!"
+    }
+  }
+};
+
+/**
+ * Simulates AI content generation with network delay
+ * Returns personalized lesson cards based on topic and interest
+ */
+export async function fetchMockLesson(topicId: string, interest: Interest): Promise<LessonContent> {
+  // Simulate network delay (AI processing time)
+  await new Promise(resolve => setTimeout(resolve, 2000));
+
+  const contentData = INTEREST_METAPHORS[interest]?.[topicId] || {
+    metaphor: `Learning ${topicId} is like exploring ${interest}—it's all about understanding the core mechanics and practicing until it becomes second nature.`,
+    theory: "Mathematical concepts build on each other. Master the fundamentals, and advanced topics become much easier.",
+    example: "Start with simple problems, identify patterns, then apply those patterns to more complex situations. Practice makes perfect!"
+  };
+
+  return {
+    topicId,
+    interest,
+    cards: [
+      {
+        id: 'card-1',
+        type: 'metaphor',
+        title: `${interest} Meets Math`,
+        content: contentData.metaphor
+      },
+      {
+        id: 'card-2',
+        type: 'theory',
+        title: 'The Theory',
+        content: contentData.theory
+      },
+      {
+        id: 'card-3',
+        type: 'example',
+        title: 'Example',
+        content: contentData.example
+      }
+    ]
+  };
+}
+
+/**
+ * Get all topics for a specific grade
+ */
+export function getTopicsByGrade(grade: Grade): Topic[] {
+  return TOPICS_BY_GRADE[grade] || [];
+}
+
+/**
+ * Get a single topic by ID
+ */
+export function getTopicById(topicId: string): Topic | null {
+  for (const grade in TOPICS_BY_GRADE) {
+    const topics = TOPICS_BY_GRADE[grade as unknown as Grade];
+    const topic = topics.find(t => t.id === topicId);
+    if (topic) return topic;
+  }
+  return null;
+}
+
+/**
+ * Simulates quiz fetching
+ * Returns quiz questions for a topic
+ */
+export async function fetchMockQuiz(topicId: string): Promise<Quiz> {
+  // Simulate network delay
+  await new Promise(resolve => setTimeout(resolve, 1500));
+
+  // Default quiz for Linear Equations (exists for testing)
+  if (topicId === 'g7-linear-eq') {
+    return {
+      topicId,
+      questions: [
+        {
+          id: 'q1',
+          question: 'Solve for x: 2x + 5 = 13',
+          topicId,
+          options: [
+            { id: 'opt-a', text: 'x = 2', errorFeedback: 'Not quite! If x = 2, then 2(2) + 5 = 9, not 13. Remember to isolate x by first subtracting 5 from both sides.' },
+            { id: 'opt-b', text: 'x = 4', errorFeedback: undefined },
+            { id: 'opt-c', text: 'x = 9', errorFeedback: 'Think again! You might have just subtracted 2 from 13. Remember the order: subtract 5 first, THEN divide by 2.' },
+            { id: 'opt-d', text: 'x = 6', errorFeedback: 'Close, but not quite. Follow the steps: 2x + 5 = 13 → 2x = 8 → x = 4. Double-check your division!' }
+          ],
+          correctAnswer: 'opt-b'
+        },
+        {
+          id: 'q2',
+          question: 'If 3x - 2 = 16, what is x?',
+          topicId,
+          options: [
+            { id: 'opt-a', text: 'x = 4', errorFeedback: 'Not quite! Check your arithmetic: 3(4) - 2 = 10, not 16. Try adding 2 to both sides first.' },
+            { id: 'opt-b', text: 'x = 6', errorFeedback: undefined },
+            { id: 'opt-c', text: 'x = 5', errorFeedback: 'Almost! You\'re close. 3(5) - 2 = 13. Remember: add 2 to BOTH sides: 3x = 18, then divide.' },
+            { id: 'opt-d', text: 'x = 8', errorFeedback: 'Too high! You might have divided before adding. First step: 3x - 2 + 2 = 16 + 2 → 3x = 18.' }
+          ],
+          correctAnswer: 'opt-b'
+        },
+        {
+          id: 'q3',
+          question: 'Solve: x/4 + 7 = 14',
+          topicId,
+          options: [
+            { id: 'opt-a', text: 'x = 21', errorFeedback: 'Not quite! You might have multiplied 7 by 4. Remember: subtract 7 FIRST to get x/4 = 7, then multiply by 4.' },
+            { id: 'opt-b', text: 'x = 7', errorFeedback: 'Close! You found what x/4 equals, but we need x itself. After getting x/4 = 7, multiply both sides by 4.' },
+            { id: 'opt-c', text: 'x = 28', errorFeedback: undefined },
+            { id: 'opt-d', text: 'x = 56', errorFeedback: 'Too high! You might have added instead of subtracted. Check: x/4 + 7 = 14 → x/4 = 7 → x = 28.' }
+          ],
+          correctAnswer: 'opt-c'
+        }
+      ]
+    };
+  }
+
+  // Generic quiz for all other topics
+  return {
+    topicId,
+    questions: [
+      {
+        id: 'q1',
+        question: `Test question 1 for ${topicId}`,
+        topicId,
+        options: [
+          { id: 'opt-a', text: 'Option A', errorFeedback: 'This is not the correct answer. Review the key concepts and try again!' },
+          { id: 'opt-b', text: 'Option B (Correct)', errorFeedback: undefined },
+          { id: 'opt-c', text: 'Option C', errorFeedback: 'Not quite! Think about the fundamental principle we covered in the lesson.' },
+          { id: 'opt-d', text: 'Option D', errorFeedback: 'Remember the example we went through? Try applying that same logic here.' }
+        ],
+        correctAnswer: 'opt-b'
+      }
+    ]
+  };
+}
